@@ -1,0 +1,404 @@
+/* html */
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header  */
+.header {
+    display: flex;
+    padding: 12px 15px;
+}
+.container-fluid {
+    display: flex;
+}
+.container-nav {
+    display: none;
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.logo:hover {
+    border: 1px solid black;
+}
+
+.header-text{
+  margin-left: 30%;
+  text-align: center;
+}
+
+.header-text:hover{
+    border: 1px solid black;
+}
+
+.btn {
+   background-color: yellow;
+    border-radius: 10%;
+    margin-left:25%;
+    margin-right: 3%;
+    width: 200px;
+    height: 35px;
+}
+.btn:hover {
+    box-shadow: 2px 2px 6px black;
+}
+
+.btn:hover > i {
+   margin-left: 18%; 
+}
+
+/* banner main  */
+.first-img {
+    width: 100%;
+    height: 360px ; 
+}
+.second-img {
+    width: 60%;
+    height: 260px;
+    position: relative;
+    left: 40%;
+}
+.banner-content {
+    margin-top: -18%;
+    margin-left: 8%;
+}
+.banner-heading {
+    font-size: 300%;
+}
+
+.banner-heading:hover {
+    border: 1px solid black;
+}
+
+.banner-para {
+    width: 35%;
+    font-weight:500;
+    padding: 30px;
+    position: absolute;
+    left: 90px;
+}
+
+.banner-para:hover {
+    border: 1px solid black; 
+}
+
+.banner-btn {
+    background-color: black;
+    color: white;
+    margin-top: 10%;
+    padding: 10px;
+    width: 15%;
+}
+
+.banner-btn:hover {
+  box-shadow: 2px 2px 6px rgb(84, 83, 83);
+}
+
+.banner-btn i {
+    margin-left: 18%;
+}
+
+.banner-btn:hover > i {
+    margin-left: 0%;
+}
+
+/* banner footer */
+.banner-footer {
+    margin-top: 1.2%;
+    text-align: center;
+    background-color: rgb(227, 227, 227);
+}
+
+.bannerfooter-text:hover {
+    border: 1px solid black;
+}
+
+/* grid section */
+.grid {
+    margin-top: 10%;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+}
+
+.grid-heading {
+    font-size: 350%;
+    font-weight: 400;
+    margin-left: 11%;
+}
+
+.container{
+    max-width: 1200px;
+    padding:1rem 1rem;
+ }
+
+.container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1rem;
+ }
+ 
+ .container .products-container .product{
+    text-align: center;
+    padding:1rem 1rem;
+    background: #fff;
+    cursor: pointer;
+ }
+ 
+ 
+ 
+ .container .products-container .product img{
+    height: 25rem;
+ }
+ 
+ .container .products-container .product:hover img{
+    transform: scale(.9);
+ }
+ 
+ .container .products-container .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+ }
+ 
+ .container .products-container .product:hover h3{
+    color:#27ae60;
+ }
+ 
+ .container .products-container .product .price{
+    font-size: 2rem;
+    color:#444;
+ }
+
+ /* pop up */
+ 
+ .products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .products-preview .preview{
+    display: none;
+    padding:2rem;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 20rem;
+    height: 10%;
+ }
+ 
+ .products-preview .preview.active{
+    display:inline-block;
+    height: 300px;
+ }
+ 
+ .products-preview .preview img{
+    height: 5rem;
+    margin-left: 0%;
+ }
+ 
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 2rem;
+ }
+ 
+ .products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+ }
+ 
+ .products-preview .preview p{
+    color: black;
+    width: 115%;
+ }
+ 
+ .products-preview .preview .price{
+    color: black;
+    font-weight: bold;
+ }
+ 
+ .products-preview .preview .buttons{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+ }
+ 
+ .products-preview .preview .buttons a{
+   width: 90%;
+   padding: 5%;
+    color:#444;
+    border:.1rem solid #444;
+    text-decoration: none;
+ }
+ 
+ .products-preview .preview .buttons a.cart{
+    background: #444;
+    color:#fff;
+ }
+ 
+ .products-preview .preview .buttons a.cart:hover{
+    background: #111;
+ }
+ 
+ .products-preview .preview .buttons a.buy:hover{
+    background: #444;
+    color:#fff;
+ }
+
+ .preview-text {
+   margin-top: -32%;
+   margin-left: 40%;
+   padding: 0%;
+
+ }
+ 
+.fa-bag-shopping {
+   padding: 0px 5px;
+}
+
+
+.badge{
+   margin-top: 73%;
+    margin-left: -21%;
+}
+
+
+ 
+
+ 
+ @media (max-width:768px){
+ .header{
+    height: 50px;
+ }
+ .container-fluid {
+    text-align: center;
+ }
+ .logo {
+   font-size: 19px;
+    margin-top: 2%;
+    margin-left: 10%;
+ }
+ .header-text {
+    display: none;
+ }
+ button.btn {
+    display: none;
+ }
+  .nav-toggler-icon {
+    width: 30px;
+    color: black;
+  } 
+  
+  .container-nav {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+    position: relative;
+    right:800%;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .first-img {
+    height: 190px;
+    z-index: -1;
+  }
+  .second-img {
+    height: 180px;
+    z-index: 0;
+  }
+  
+  .banner-content {
+    text-align: center;
+  }
+  .banner-heading {
+    font-size: 211%;
+    margin-top: -82%;
+    margin-left: -7%;
+  }
+   .banner-para {
+    width: 100%;
+        font-size: small;
+        margin-left: -23%;
+        margin-top: -20px;
+   }
+   .banner-btn {
+    width: 43%;
+    font-size: 10px;
+    margin-top: 115px;
+    margin-left: -10%;
+   }
+
+   .banner-btn:hover {
+    box-shadow: 2px 2px 6px rgb(84, 83, 83);
+  }
+  .banner-btn:hover > i {
+    margin-left: 0%;
+}
+   .bannerfooter-text {
+    font-size: 11px;
+        margin-top: 22%;
+   }
+
+   .grid-heading {
+    font-size: 26px;
+    margin-top: -8%;
+   }
+
+   .container .products-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 0.2fr));
+      gap: 0.5rem;
+      margin-left: 7%;
+ }
+
+ .container .products-container .product img{
+    height: 5rem;
+    margin-top: -59%;
+        margin-left: -12%;
+ }
+ .container .products-container .product{
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+ }
+
+ }
+ 
+
+ 
+
